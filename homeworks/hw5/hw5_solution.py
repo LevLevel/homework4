@@ -20,8 +20,8 @@ def clean_string(s: str) -> str:
 
 
 def to_capitalize(s: str) -> str:
-    s = s.capitalize()
-    return s
+    result = s.capitalize()
+    return result
 
 
 def to_list(s: str) -> list:
