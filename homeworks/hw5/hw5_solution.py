@@ -20,13 +20,13 @@ def clean_string(s: str) -> str:
 
 
 def to_capitalize(s: str) -> str:
-    result = s.capitalize()
-    return result
+    s = s.capitalize()
+    return s
 
 
 def to_list(s: str) -> list:
-    s = s.split()
-    return s
+    result = s.split()
+    return result
 
 
 def formatting(array: list, s1: str, s2: str) -> str:
