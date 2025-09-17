@@ -1,4 +1,6 @@
 import random
+
+
 def check_guess(bulls, cows):
     secret = bulls
     guess = cows
@@ -20,3 +22,4 @@ def generate_secret_number():
     if digits[0] == 0:
         digits[0], digits[1] = digits[1], digits[0]
     return ''.join(map(str, digits[:4]))
+
