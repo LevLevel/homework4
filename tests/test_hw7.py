@@ -1,6 +1,13 @@
+import os
+import sys
+
 import pytest
 from conftest import config
+print(f"Current directory: {os.getcwd()}")
+print(f"Python path: {sys.path}")
 
+# Добавь путь к корню проекта
+sys.path.insert(0, os.getcwd())
 try:
     from homeworks.hw7.bulls_and_cows.hw7_solution import check_guess, generate_secret_number
     from homeworks.hw7.statues.hw7_solution import missing_statues
