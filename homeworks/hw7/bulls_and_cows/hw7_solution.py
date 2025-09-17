@@ -1,3 +1,4 @@
+import random
 def check_guess(bulls, cows):
     secret = bulls
     guess = cows
@@ -14,7 +15,6 @@ def check_guess(bulls, cows):
 
 
 def generate_secret_number():
-    import random
     digits = list(range(10))
     random.shuffle(digits)
     if digits[0] == 0:
