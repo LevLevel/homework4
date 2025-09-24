@@ -1,8 +1,8 @@
 def remove_previous_symbol(text):
-    while '#' in text:
-        i = text.find('#')
-        if i > 0:
-            text = text[:i - 1] + text[i + 1:]
+    result = ""
+    for char in text:
+        if char == '#':
+            result = result[:-1]
         else:
-            text = text[1:]
-    return text
+            result += char
+    return result
