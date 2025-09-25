@@ -2,9 +2,9 @@ import pytest
 from conftest import config
 
 try:
-    from homeworks.hw8.sequence.hw8_solution import ascending_sequence
-    from homeworks.hw8.number_opposite.hw8_solution import number_opposite
-    from homeworks.hw8.payment_card_validation.hw8_solution import is_card_number_valid
+    from homeworks.hw8 import sequence
+    from homeworks.hw8 import number_opposite
+    from homeworks.hw8 import payment_card_validation
 except ImportError:
     pytest.skip("Module(s) does not exist or have incorrect path", allow_module_level=True)
 
@@ -19,7 +19,7 @@ pytestmark = pytest.mark.skipif(not config.get("hw8", False), reason="HW disable
     ([40, 50, 60, 10, 20, 30], False),
 ])
 def test_ascending_sequence(arr, expected):
-    assert ascending_sequence(arr) == expected, f"Expected ascending-sequence={expected} for {arr}"
+    assert sequence(arr) == expected, f"Expected ascending-sequence={expected} for {arr}"
 
 
 @pytest.mark.parametrize("n,f_number,expected", [
@@ -52,5 +52,5 @@ def test_number_opposite(n, f_number, expected):
     (5105105105105100, True),
 ])
 def test_is_card_number_valid(numer, expected):
-    assert is_card_number_valid(numer) == expected, \
+    assert payment_card_validation(numer) == expected, \
         f"Expected that card with number '{numer}' is valid={expected}"
