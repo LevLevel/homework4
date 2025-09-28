@@ -4,7 +4,11 @@
     "hw7": false,
     "hw8": false,
     "hw9": false,
+<<<<<<< Updated upstream
     "hw10": false,
+=======
+    "hw10": true,
+>>>>>>> Stashed changes
     "hw10*": false,
     "hw11": false,
     "hw12": false,
