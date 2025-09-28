@@ -3,7 +3,7 @@ from functools import reduce
 
 def typed(type_):
     def decorator(func):
-        def wrapper(*args, **kwargs):
+        def wrapper(*args):
             converted_args = [type_(arg) for arg in args]
             return func(*converted_args)
 
