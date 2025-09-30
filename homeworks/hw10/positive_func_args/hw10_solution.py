@@ -3,7 +3,7 @@ def validate_arguments(func):
         all_args = list(args) + list(kwargs.values())
         for arg in all_args:
             if not isinstance(arg, (int, float)) or arg <= 0:
-                raise ValueError(f"{arg} is  string or not a positive ")
+                raise ValueError(f"{arg} is not a positive")
         return func(*args, **kwargs)
 
     return wrapper
