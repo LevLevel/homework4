@@ -6,47 +6,37 @@ class Book:
         self.isbn = isbn
         self.is_reserved = False
         self.is_borrowed = False
-        self.reserved_by = None
-        self.borrowed_by = None
+        self.current_user = None
 
     def reserve(self, reader):
-        if self.is_reserved:
-            return False
-        if self.is_borrowed:
+        if self.is_reserved or self.is_borrowed:
             return False
 
         self.is_reserved = True
-        self.reserved_by = reader
+        self.current_user = reader
         return True
 
     def cancel_reserve(self, reader):
-        if not self.is_reserved:
-            return False
-        if self.reserved_by != reader:
+        if not self.is_reserved or self.current_user != reader:
             return False
 
         self.is_reserved = False
-        self.reserved_by = None
+        self.current_user = None
         return True
 
     def get_book(self, reader):
-        if self.is_borrowed:
-            return False
-        if self.is_reserved and self.reserved_by != reader:
+        if self.is_borrowed or (self.is_reserved and self.current_user != reader):
             return False
 
         self.is_borrowed = True
-        self.borrowed_by = reader
         self.is_reserved = False
-        self.reserved_by = None
+        self.current_user = reader
         return True
 
     def return_book(self, reader):
-        if not self.is_borrowed:
-            return False
-        if self.borrowed_by != reader:
+        if not self.is_borrowed or self.current_user != reader:
             return False
 
         self.is_borrowed = False
-        self.borrowed_by = None
+        self.current_user = None
         return True
