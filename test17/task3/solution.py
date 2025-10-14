@@ -1,7 +1,7 @@
 def sum_numbers(n):
     result = 0
     for i in range(1, n + 1):
-        result += n
+        result += i
     print(f"Sum to {n} = {result}")
     return result
 
