@@ -1,6 +1,6 @@
 def sum_numbers(n):
     result = 0
-    for n in range(1, n + 1):
+    for i in range(1, n + 1):
         result += n
     print(f"Sum to {n} = {result}")
     return result
