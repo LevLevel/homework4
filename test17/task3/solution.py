@@ -5,6 +5,7 @@ def sum_numbers(n):
     print(f"Sum to {n} = {result}")
     return result
 
+
 assert sum_numbers(1) == 1
 assert sum_numbers(2) == 3
 assert sum_numbers(8) == 36
