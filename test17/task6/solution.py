@@ -1,8 +1,7 @@
 def analyze_file(filename):
     try:
-        with open('test.txt', 'r', encoding='utf-8') as f:
-            pass
-    except FileNotFoundError:
+        pass
+    finally:
         with open('test.txt', 'w', encoding='utf-8') as f:
             f.write("""Volksvagen Das Auto
             Audi Truth in Engineering
