@@ -8,20 +8,20 @@ def string_funk(s, n):
     return first_part + second_part
 
 
-alphabet = "abcdefghijklmnopqrstuvwxyz"
+ALPHABET = "abcdefghijklmnopqrstuvwxyz"
 
-result1 = string_funk(alphabet, 1)
-print(f"f(s, 1) => '{result1}'")
-assert result1 == "a"
+RESULT1 = string_funk(ALPHABET, 1)
+print(f"f(s, 1) => '{RESULT1}'")
+assert RESULT1 == "a"
 
-result2 = string_funk(alphabet, 2)
-print(f"f(s, 2) => '{result2}'")
-assert result2 == "aba"
+RESULT2 = string_funk(ALPHABET, 2)
+print(f"f(s, 2) => '{RESULT2}'")
+assert RESULT2 == "aba"
 
-result3 = string_funk(alphabet, 3)
-print(f"f(s, 3) => '{result3}'")
-assert result3 == "abcba"
+RESULT3 = string_funk(ALPHABET, 3)
+print(f"f(s, 3) => '{RESULT3}'")
+assert RESULT3 == "abcba"
 
-result4 = string_funk(alphabet, 4)
-print(f"f(s, 4) => '{result4}'")
-assert result4 == "abcdcba"
+RESULT4 = string_funk(ALPHABET, 4)
+print(f"f(s, 4) => '{RESULT4}'")
+assert RESULT4 == "abcdcba"

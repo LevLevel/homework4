@@ -1,29 +1,29 @@
-a = "Skoda, simply clever"
+A = "Skoda, simply clever"
 
-first_char = a[0]
-assert first_char == "S"
-print(f"First char: '{first_char}'")
+FIRST_CHAR = A[0]
+assert FIRST_CHAR == "S"
+print(f"First char: '{FIRST_CHAR}'")
 
-last_char = a[-1]
-assert last_char == "r"
-print(f"Last char: '{last_char}'")
+LAST CHAR = A[-1]
+assert LAST CHAR == "r"
+print(f"Last char: '{LAST CHAR}'")
 
-third_char = a[2]
-assert third_char == "o"
-print(f"Third char: '{third_char}'")
+THIRD_CHAR = A[2]
+assert THIRD_CHAR == "o"
+print(f"Third char: '{THIRD_CHAR}'")
 
-third_end_char = a[-3]
-assert third_end_char == "v"
-print(f"Third end char: '{third_end_char}'")
+THIRD_END_CHARr = A[-3]
+assert THIRD_END_CHAR == "v"
+print(f"Third end char: '{THIRD_END_CHAR}'")
 
-a_len = len(a)
-assert a_len == 20
-print(f"Length of string: '{a_len}'")
+A_LEN = len(A)
+assert A_LEN == 20
+print(f"Length of string: '{A_LEN}'")
 
-reversed_a = a[::-1]
-assert reversed_a == "revelc ylpmis ,adokS"
-print(f"Reversed string: '{reversed_a}'")
+REVERSED_A = A[::-1]
+assert REVERSED_A == "revelc ylpmis ,adokS"
+print(f"Reversed string: '{REVERSED_A}'")
 
-eight_chars = a[:8]
-assert eight_chars == "Skoda, s"
-print(f"Eight chars: '{eight_chars}'")
+EIGHT_CHAR = A[:8]
+assert EIGHT_CHAR == "Skoda, s"
+print(f"Eight chars: '{EIGHT_CHAR}'")
