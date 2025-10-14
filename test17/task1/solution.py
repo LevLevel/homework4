@@ -4,15 +4,15 @@ FIRST_CHAR = A[0]
 assert FIRST_CHAR == "S"
 print(f"First char: '{FIRST_CHAR}'")
 
-LAST CHAR = A[-1]
-assert LAST CHAR == "r"
-print(f"Last char: '{LAST CHAR}'")
+LAST_CHAR = A[-1]
+assert LAST_CHAR == "r"
+print(f"Last char: '{LAST_CHAR}'")
 
 THIRD_CHAR = A[2]
 assert THIRD_CHAR == "o"
 print(f"Third char: '{THIRD_CHAR}'")
 
-THIRD_END_CHARr = A[-3]
+THIRD_END_CHAR = A[-3]
 assert THIRD_END_CHAR == "v"
 print(f"Third end char: '{THIRD_END_CHAR}'")
 
